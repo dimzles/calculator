@@ -68,6 +68,22 @@ button:active {
     background-color: rgb(0, 115, 216);
 }
 
+#btn-op:hover {
+    background-color: rgb(253, 115, 65);
+}
+
+#btn-op:active {
+    background-color: rgb(255, 69, 0);
+}
+
+#deleteBtn:hover {
+    background-color: rgb(255, 58, 58);
+}
+
+#deleteBtn:active {
+    background-color: red;
+}
+
 .double {
     flex-basis: 50%;
 }
