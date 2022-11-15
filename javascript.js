@@ -22,6 +22,7 @@ for (let i = 0; i < btns.length; i++) {
                 } else {
                     display.textContent += btns[i].textContent;
                 }
+                
             }
             if (btns[i].id === 'btn-op') {
                 handleOperator(btns[i].textContent);
@@ -35,6 +36,7 @@ decimalBtn.addEventListener('click', () => {
 
 equalsBtn.addEventListener('click', () => {
     evaluate();
+    
 });
 
 clearBtn.addEventListener('click', () => {
@@ -50,6 +52,7 @@ function handleOperator(input) {
     if (operator !== null) evaluate();
     firstNumber = display.textContent;
     operator = input;
+    
     displayValue = 0;
     updateDisplay();
 }
@@ -63,6 +66,7 @@ function evaluate() {
     secondNumber = display.textContent;
     display.textContent = roundNumber(operate(operator, firstNumber, secondNumber));
     operator = null;
+    
 }
 
 function inputDecimal() {
@@ -85,6 +89,7 @@ function clearDisplay() {
     displayValue = 0;
     firstNumber = null;
     secondNumber = null;
+    operator = null;
     updateDisplay();
 }
 
